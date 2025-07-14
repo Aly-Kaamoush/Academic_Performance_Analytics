@@ -24,19 +24,33 @@ Scalable Architecture: Modular design for easy extension and maintenance
 
 **Project Architecture**
 academic-performance-analytics/
+
 ├── data/
-│   ├── student_grades.csv          # Raw academic data (100 student records)
-│   └── cleaned_grades.csv          # Processed dataset with features
+
+    ├── student_grades.csv          # Raw academic data (100 student records)
+
+    └── cleaned_grades.csv          # Processed dataset with features
+
 ├── visualizations/
-│   ├── grade_distribution.png      # Letter grade distribution analysis
-│   ├── subject_performance.png     # Subject-wise performance comparison
-│   ├── performance_by_grade_level.png # Grade level trend analysis
-│   └── gender_performance.png      # Gender-based performance insights
+
+    ├── grade_distribution.png      # Letter grade distribution analysis
+
+    ├── subject_performance.png     # Subject-wise performance comparison
+
+    ├── performance_by_grade_level.png  # Grade level trend analysis
+
+    └── gender_performance.png       # Gender-based performance insights
+
 ├── main.py                         # Core analysis pipeline
+
 ├── dashboard.py                    # Interactive Streamlit dashboard
-├── run_all.py                     # Complete pipeline executor
+
+├── run_all.py                      # Complete pipeline executor
+
 ├── requirements.txt                # Project dependencies
+
 ├── analysis_report.txt            # Auto-generated insights report
+
 └── README.md                      # Project documentation
 
 **Quick Start**
