@@ -1,8 +1,8 @@
-Academic Performance Analytics
+** Academic Performance Analytics
 
 An end-to-end data analysis project with interactive dashboard for educational performance insights
 A comprehensive Python-based analytics solution that demonstrates advanced data science skills through academic performance analysis. Features complete data pipeline from cleaning to interactive visualization, perfect for showcasing data analyst capabilities.
-🎯 Project Overview
+** Project Overview
 This project transforms raw academic data into actionable insights through a multi-stage analytics pipeline. It demonstrates proficiency in data cleaning, statistical analysis, visualization, and dashboard development - core skills for data analyst roles.
 Key Features:
 
