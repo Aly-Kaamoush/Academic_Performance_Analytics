@@ -6,8 +6,6 @@ Run with: streamlit run dashboard.py
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 from datetime import datetime
 import os
 
