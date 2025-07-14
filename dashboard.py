@@ -16,7 +16,6 @@ import os
 # Set page configuration
 st.set_page_config(
     page_title="Academic Performance Analytics Dashboard",
-    page_icon="-->",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -112,7 +111,7 @@ class DashboardApp:
     
     def create_header(self):
         """Create professional dashboard header with key metrics"""
-        st.title("--> Academic Performance Analytics Dashboard")
+        st.title("Academic Performance Analytics Dashboard")
         st.markdown("---")
         
         # Display summary statistics
@@ -155,7 +154,7 @@ class DashboardApp:
     
     def create_sidebar(self):
         """Create interactive filtering sidebar"""
-        st.sidebar.header("--> Filters")
+        st.sidebar.header("Filters")
         
         if self.data is not None:
             # Grade level filter
@@ -200,7 +199,7 @@ class DashboardApp:
     
     def create_grade_distribution_chart(self, data):
         """Create interactive grade distribution chart"""
-        st.subheader("--> Grade Distribution")
+        st.subheader("Grade Distribution")
         
         if 'letter_grade' not in data.columns:
             st.warning("Letter grades not available. Please run the full analysis first.")
@@ -244,7 +243,7 @@ class DashboardApp:
     
     def create_subject_performance_chart(self, data):
         """Create subject performance chart"""
-        st.subheader("--> Subject Performance")
+        st.subheader("Subject Performance")
         
         # Get subject columns
         subject_columns = ['Math', 'Science', 'English', 'History', 'Art']
@@ -292,7 +291,7 @@ class DashboardApp:
     
     def create_performance_analysis(self, data):
         """Generate performance analysis visualizations"""
-        st.subheader("--> Performance Analysis")
+        st.subheader("Performance Analysis")
         
         col1, col2 = st.columns(2)
         
@@ -328,7 +327,7 @@ class DashboardApp:
     
     def create_detailed_tables(self, data):
         """Generate detailed data tables with multiple views"""
-        st.subheader("--> Detailed Data")
+        st.subheader("Detailed Data")
         
         # Tab layout for different views
         tab1, tab2, tab3 = st.tabs(["Student Data", "Top Performers", "Subject Analysis"])
@@ -395,13 +394,13 @@ class DashboardApp:
     
     def create_insights_section(self, data):
         """Create insights and recommendations section"""
-        st.subheader("--> Key Insights & Recommendations")
+        st.subheader("Key Insights & Recommendations")
         
         if data is not None:
             col1, col2 = st.columns(2)
             
             with col1:
-                st.write("**--> Key Findings:**")
+                st.write("**Key Findings:**")
                 
                 # Calculate insights
                 avg_grade = data['overall_average'].mean()
@@ -428,7 +427,7 @@ class DashboardApp:
                         st.write(insight)
             
             with col2:
-                st.write("**--> Recommendations:**")
+                st.write("**Recommendations:**")
                 
                 recommendations = [
                     f"• Focus additional support on {worst_subject} subject",
